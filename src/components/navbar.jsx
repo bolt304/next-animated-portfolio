@@ -32,6 +32,9 @@ const Navbar = () => {
           <Link href="/">
           <Image src="/github.png" alt="" width={26} height={26} />
           </Link>
+          <Link href="/">
+          <Image src="/linkedin.png" alt="" width={26} height={26} />
+          </Link>
         </div>
         {/* Responsive Menu & Buttons */}
         <div className="md:hidden">
