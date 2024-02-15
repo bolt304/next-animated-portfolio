@@ -1,6 +1,7 @@
 "use client";
 import {useState} from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const links = [
   {url: "/", title: "Home"},
@@ -14,15 +15,26 @@ const Navbar = () => {
 
   return (
       <div className="h-full flex items-center justify-between px-4 sm:px-8 md:-12 lg:px-20 xl:px-48">
+        <div className="hidden md:flex gap-4">
+          {links.map(link => (
+            <Link href={link.url} key={link.title}>{link.title}</Link>
+          ))}
+        </div>
         {/* Logo */}
-        <div className="">
+        <div className="md:hidden ld:flex">
           <Link href="/" 
             className="text-sm bg-pink-300 rounded-md p-1 font-semibold flex items-center justify-center">
             <span className="text-black mr-1">Esther Carmona</span>
           </Link>
         </div>
-        {/* Menu */}
-        <div className="">
+        {/* Iconos */}
+        <div className='hidden md:flex gap-4'>
+          <Link href="/">
+          <Image src="/github.png" alt="" width={26} height={26} />
+          </Link>
+        </div>
+        {/* Responsive Menu & Buttons */}
+        <div className="md:hidden">
           <button className='w-10 h-8 flex flex-col justify-between z-50 relative' 
           onClick={(()=>setOpen(!open))}>
             <div className="w-10 h-1 bg-white rounded"></div>
