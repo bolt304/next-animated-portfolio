@@ -1,8 +1,15 @@
+"use client";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
+const NavLink = ({link}) => {
 
-const NavLink = () => {
+const pathName = usePathname();
+
     return (
-        <div className=""></div>
+        <Link classname={`rounded p-1 ${pathName === link.url && "bg-pink-300 text-black"}`} href={link.url}>
+            {link.title}
+        </Link>
     )
 }
 
