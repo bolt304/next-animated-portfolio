@@ -1,9 +1,16 @@
+"use client";
+import {motion} from 'framer-motion';
+
 const AboutPage = () => {
     return (
-        <div>
-        <h1>About</h1>
-        <p>This is the about page</p>
-        </div>
+        <motion.div 
+    className="h-full" 
+    initial={{y: "-100vh"}} 
+    animate={{y: "0%" }} 
+    transition={{ duration: 0.6 }}
+    >
+        About
+    </motion.div>
     );
 }
 

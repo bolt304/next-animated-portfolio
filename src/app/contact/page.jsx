@@ -1,9 +1,16 @@
+"use clinent";
+import {motion} from 'framer-motion';
+
 const ContactPage = () => {
     return (
-        <div>
-        <h1>Contact</h1>
-        <p>This is the conctáctame page</p>
-        </div>
+        <motion.div 
+    className="h-full" 
+    initial={{y: "-100vh"}} 
+    animate={{y: "0%" }} 
+    transition={{ duration: 0.6 }}
+    >
+        Contact
+    </motion.div>
     );
 }
 
