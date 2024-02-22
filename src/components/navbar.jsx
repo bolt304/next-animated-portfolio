@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: 45,
-      backgroundColor: "rgb(255,255,255)",
+      backgroundColor: "rgb(251, 207, 232)",
     }
   }
   const centerVariants = {
@@ -39,37 +39,55 @@ const Navbar = () => {
     },
     opened: {
       rotate: -45,
-      backgroundColor: "rgb(255,255,255)",
+      backgroundColor: "rgb(251, 207, 232)",
     }
   };
 
   const listVariants = {
     closed: {
-      x:"100vw",
+      x: "100vw",
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100
+      }
     },
     opened: {
-      x:0,
-      Transition: {
+      x: 0,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
         when: "beforeChildren",
-        staggerChildren: 0.3,
-      },
-    },
+        staggerChildren: 0.08,
+      }
+    }
   };
-
+  
   const listItemVariants = {
     closed: {
       x: -10,
       opacity: 0,
+      transition: {
+        type: "spring",
+        damping: 10,
+        stiffness: 100
+      }
     },
     opened: {
       x: 0,
       opacity: 1,
-    },
+      transition: {
+        type: "spring",
+        damping: 10,
+        stiffness: 100
+      }
+    }
   };
 
   return (
 
-      <div className="h-full flex items-center justify-between p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 text-l">
+      <div className="h-full flex items-center justify-between p-4 sm:p-8 md:p-12 lg:p-8 xl:p-10 text-l my-0">
         <div className="hidden md:flex gap-4 w-1/3">
           {links.map(link => (
             <NavLink link={link} key={link.title}/>
@@ -84,11 +102,15 @@ const Navbar = () => {
         </div>
         {/* Iconos */}
         <div className='hidden md:flex gap-4 w-3/3'>
-          <Link href="/">
+          <Link href="https://github.com/LentinulaEdode" passHref>
+          <div onClick={(e) => { e.preventDefault(); window.open("https://github.com/LentinulaEdode", "_blank"); }}>
           <Image src="/github.png" alt="" width={26} height={26} />
+          </div>
           </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/esthercarmonaa/" passHref>
+          <div onClick={(e) => { e.preventDefault(); window.open("https://www.linkedin.com/in/esthercarmonaa/", "_blank"); }}>
           <Image src="/linkedin.png" alt="" width={26} height={26} />
+          </div>
           </Link>
         </div>
 
@@ -121,7 +143,7 @@ const Navbar = () => {
           variants={listVariants} 
           initial="closed" 
           animate="opened" 
-          className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-2xl z-40"
+          className="fixed top-0 left-0 w-screen h-screen bg-neutral-900 text-pink-200 flex flex-col items-center justify-center gap-8 text-2xl z-40"
           >
             {links.map(link => (
             <motion.div variants={listItemVariants} className="" key={link.title}>

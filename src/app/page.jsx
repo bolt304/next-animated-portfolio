@@ -11,7 +11,7 @@ const Homepage = () => {
     transition={{ duration: 0.6 }}>
 
     {/* Hero div */}
-    <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:-12 lg:px-20 xl:px-48 text-l">
+    <div className="h-full flex flex-col lg:flex-row p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 text-l">
     {/* Hero container - image */} 
       <div className="h-1/2 lg:h-full lg:w-1/2 relative">
        <Image src="/knight.png" alt="" fill className="object-contain"/>
@@ -19,8 +19,8 @@ const Homepage = () => {
     {/* Texto */}
     <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-6 items-center justify-center">
     {/* Title */}
-      <h1 className="text-xl md:text-4xl font-semibold">From Historian to HTML: My Web Journey</h1>
-    {/* Descripciçon */}
+      <h1 className="text-xl md:text-2xl font-semibold">From Historian to Full Stack Developer: My Web Journey</h1>
+    {/* Descripción */}
       <p className="md:text-l">Portfolio dedicado a demostrar mis habilidades técnicas y creativas, mostrando proyectos personales y ejercicios prácticos que reflejan mi dedicación reciente por la programación y mi compromiso con el aprendizaje continuo en el campo del desarrollo web.</p>
     {/* Buttons */}
         <div className="flex gap-4">
