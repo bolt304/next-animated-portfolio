@@ -17,7 +17,7 @@ const AboutPage = () => {
           <Image src="/desk.png" alt="" width={500} height={500}/>
         </div>
         {/* Contenedor del texto */}
-        <div className="h-1/3 md:w-1/2 lg:w-1/2 flex flex-col items-center gap-4 mt-10">
+        <div className="h-1/3 md:w-1/2 mr-10 lg:w-1/2 flex flex-col items-center gap-4 mt-10">
           {/* Título */}
           <h1 className="font-bold text-2xl text-center">Biography</h1>
           {/* Descripción */}
