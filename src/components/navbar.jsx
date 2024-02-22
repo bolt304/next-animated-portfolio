@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
 
       <div className="h-full flex items-center justify-between p-4 sm:p-8 md:p-12 lg:p-8 xl:p-10 text-l my-0">
-        <div className="hidden md:flex gap-4 w-1/3">
+        <div className="hidden md:flex gap-4 w-1/3 font-semibold">
           {links.map(link => (
             <NavLink link={link} key={link.title}/>
           ))}
@@ -104,12 +104,12 @@ const Navbar = () => {
         <div className='hidden md:flex gap-4 w-3/3'>
           <Link href="https://github.com/LentinulaEdode" passHref>
           <div onClick={(e) => { e.preventDefault(); window.open("https://github.com/LentinulaEdode", "_blank"); }}>
-          <Image src="/github.png" alt="" width={26} height={26} />
+          <Image src="/github.png" alt="" width={28} height={28} />
           </div>
           </Link>
           <Link href="https://www.linkedin.com/in/esthercarmonaa/" passHref>
           <div onClick={(e) => { e.preventDefault(); window.open("https://www.linkedin.com/in/esthercarmonaa/", "_blank"); }}>
-          <Image src="/linkedin.png" alt="" width={26} height={26} />
+          <Image src="/linkedin.png" alt="" width={28} height={28} />
           </div>
           </Link>
         </div>
