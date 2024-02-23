@@ -15,7 +15,7 @@ const ContactPage = () => {
 
     const form = useRef();
 
-  const sendEmail = (e) => {
+    const sendEmail = (e) => {
     e.preventDefault();
     setError(false);
     setSuccess(false);
@@ -58,7 +58,7 @@ const ContactPage = () => {
                                 initial={{opacity:1}} 
                                 animate={{opacity:0}} 
                                 transition={{
-                                    duration: 3, 
+                                    duration: 1.5,
                                     repeat: Infinity,
                                     delay: index * 0.1,
                                 }} 
@@ -84,7 +84,7 @@ const ContactPage = () => {
                 className="bg-transparent border-b-2 border-b-black outline-none resize-none" 
                 name="user_message" 
                 />
-                <span>My email address is:</span>
+                <span>Your email address is:</span>
                 <input 
                 name="user_email" 
                 type="text" 
