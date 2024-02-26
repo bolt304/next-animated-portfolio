@@ -97,7 +97,7 @@ const Navbar = () => {
         <div className="md:hidden lg:flex w-1/3">
           <Link href="/" 
             className="text-sm bg-pink-300 rounded-md p-1 font-semibold flex items-center justify-center">
-            <span className="text-black mr-1 ml-1">Esther Carmona</span>
+            <span className="text-black mr-1 ml-1">thercarmona</span>
           </Link>
         </div>
         {/* Iconos */}

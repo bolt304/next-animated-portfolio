@@ -23,7 +23,7 @@ const Homepage = () => {
     {/* Title */}
       <h1 className="text-xl md:text-xl font-semibold">From Historian to Full Stack Developer: My Web Journey</h1>
     {/* Descripción */}
-      <p className="md:text-l font-medium">Portfolio dedicado a demostrar mis habilidades técnicas y creativas, mostrando proyectos personales y ejercicios prácticos que reflejan mi dedicación reciente por la programación y mi compromiso con el aprendizaje continuo en el campo del desarrollo web.</p>
+      <p className="md:text-l font-medium">A portfolio showcasing my technical and creative skills, featuring personal projects and practical exercises that reflect my recent dedication to programming and commitment to continuous learning in the field of web development.</p>
     {/* Buttons */}
         <div className="flex gap-4">
           <Link href="/projects">

@@ -13,20 +13,20 @@ const AboutPage = () => {
         {/* Contenedor de la imagen y el texto */}
     <div className="h-full flex flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-center">
         {/* Contenedor de la imagen */}
-        <div className="sm:h-1/3 w-2/4 md:w-2/3 lg:w-full relative overflow-hidden">
-          <Image src="/desk.png" alt="" width={500} height={500}/>
+        <div className="sm:h-1/3 w-2/4 md:w-2/4 lg:1/3 relative overflow-hidden">
+          <Image src="/desk.png" alt="" width={450} height={450}/>
         </div>
         {/* Contenedor del texto */}
-        <div className="h-1/3 md:w-1/2 mr-10 lg:w-1/2 flex flex-col items-center gap-4 mt-10">
+        <div className="h-1/3 md:w-1/2 mr-10 lg:w-1/2 flex flex-col items-center gap-2 mt-10">
           {/* Título */}
           <h1 className="font-bold text-2xl text-center">Biography</h1>
           {/* Descripción */}
-          <p className="md:text-l w-full sm:w-auto ml-12 md:mr-15 lg:text-left lg:w-full">
-            Lorem ipsum...sdfdsgdfgdfghdfhhdfhfdhfhfghgfjgjgj para que pueda sdfjsdfjdsgndgf 
+          <p className="md:text-l w-full sm:w-auto ml-12 md:mr-15 lg:text-left lg:w-full p-6 font-medium">
+          Hello! I'm Esther, and I've recently shifted from delving into medieval texts to diving into the world of web development. With a strong foundation in history and freshly armed with Full Stack Development skills, I'm now on a quest to integrate my investigative prowess with my newfound passion for coding.
           </p>
           {/* Quote */}
           <span className="italic ml-15">
-            Lorem ipsummm más tierno
+          Merging codices with code
           </span>
         </div>
     </div>

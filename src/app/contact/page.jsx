@@ -68,11 +68,11 @@ const ContactPage = () => {
                             </div>
                         </div>
                     </motion.div>
-                    <p className="w-80 h-24 lg:text-lg md:text-md font-medium text-center">{text2}</p>
+                    <p className="w-80 h-24 lg:text-lg md:text-md font-medium text-center p-2">{text2}</p>
                     <form 
                     onSubmit={sendEmail} 
                     ref={form} 
-                    className="flex flex-col gap-4 justify-center w-full max-w-md mx-auto lg:w-full">
+                    className="flex flex-col gap-6 justify-center w-full max-w-md mx-auto lg:w-full">
                         <textarea rows={4} 
                         className="bg-transparent border-b-2 border-gray-700 outline-none resize-none" 
                         name="user_message" 
@@ -87,8 +87,8 @@ const ContactPage = () => {
                         {error && <span className="text-red-500 text-center">Message failed to send</span>}
                     </form>
             </div>
-            <div className="absolute left-8 bottom-10">
-                <Image src="/contact.png" alt="Background" width={250} height={250} />
+            <div className="absolute left-5 bottom-5">
+                <Image src="/contact.png" alt="Background" width={250} height={200} />
             </div>
         </motion.div>
     
