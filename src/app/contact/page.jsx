@@ -45,7 +45,7 @@ const ContactPage = () => {
             animate={{y: "0%" }} 
             transition={{ duration: 0.6 }}
             >
-                <div className="h-1/2 lg:h-full lg:w-1/2 md:h-full md:w-1/2 flex flex-col gap-10 mr-2 ml-4 justify-center items-center">
+                <div className="h-1/2 lg:h-full lg:w-1/2 md:h-full md:w-1/2 flex flex-col gap-8 mr-2 ml-4 justify-center items-center sm:1/2">
                     <motion.div className="text-center text-5xl">
                         <div className="flex items-center tracking-wide">
                             {text.split("").map((letter, index) => (
@@ -68,7 +68,7 @@ const ContactPage = () => {
                             </div>
                         </div>
                     </motion.div>
-                    <p className="w-80 h-24 lg:text-lg md:text-md font-medium text-center p-2">{text2}</p>
+                    <p className="w-80 h-30 lg:text-lg md:text-md font-medium text-center p-2 bg-pink-50 rounded-lg">{text2}</p>
                     <form 
                     onSubmit={sendEmail} 
                     ref={form} 
