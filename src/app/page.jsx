@@ -26,7 +26,7 @@ const Homepage = () => {
       <p className="md:text-l font-medium">A portfolio showcasing my technical and creative skills, featuring personal projects and practical exercises that reflect my recent dedication to programming and commitment to continuous learning in the field of web development.</p>
     {/* Buttons */}
         <div className="flex gap-4">
-          <Link href="/projects">
+          <Link href="/portfolio">
           <button className="p-2 rounded-md bg-pink-300 hover:bg-pink-400 active:bg-pink-400 focus:outline-none focus:ring focus:ring-pink-300  text-black font-medium tracking-tighter">View my work</button>
           </Link>
           <Link href="/contact">
