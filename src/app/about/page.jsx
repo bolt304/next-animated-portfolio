@@ -38,43 +38,43 @@ const AboutPage = () => {
                 <h1 className="font-bold text-2xl text-center">Skills</h1>
                 {/* Lista de Skills */}
                 <div className="flex gap-2 flex-wrap p-3 justify-center">
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                         JavaScript
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             React.js
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Next.js
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Express.js
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Node.js
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             CSS
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Tailwind CSS
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             MongoDB
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             MySQL
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Git
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             GitHub
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Docker
                         </div>
-                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-pink-50">
+                        <div className="rounded p-2 text-sm cursor-progress bg-neutral-800 text-orange-100">
                             Postman
                         </div>
                     </div>

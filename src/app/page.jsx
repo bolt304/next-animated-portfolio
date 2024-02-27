@@ -27,10 +27,10 @@ const Homepage = () => {
     {/* Buttons */}
         <div className="flex gap-4">
           <Link href="/portfolio">
-          <button className="p-2 rounded-md bg-pink-300 hover:bg-pink-400 active:bg-pink-400 focus:outline-none focus:ring focus:ring-pink-300  text-black font-medium tracking-tighter">View my work</button>
+          <button className="p-2 rounded-md bg-rose-300 hover:bg-rose-400 active:bg-rose-400 focus:outline-none focus:ring focus:ring-rose-300  text-black font-medium tracking-tighter">View my work</button>
           </Link>
           <Link href="/contact">
-          <button className="p-2 rounded-md bg-pink-300 hover:bg-pink-400 active:bg-pink-400 focus:outline-none focus:ring focus:ring-pink-300  text-black font-medium tracking-tighter">Contact Me</button>
+          <button className="p-2 rounded-md bg-rose-300 hover:bg-rose-400 active:bg-rose-400 focus:outline-none focus:ring focus:ring-rose-300  text-black font-medium">Contact Me</button>
           </Link>
         </div>
       </div>
