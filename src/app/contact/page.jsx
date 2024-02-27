@@ -46,7 +46,7 @@ const ContactPage = () => {
             transition={{ duration: 0.6 }}
             >
                 <div className="h-1/2 lg:h-full lg:w-1/2 md:h-full md:w-1/2 flex flex-col gap-10 mr-2 ml-4 justify-center items-center">
-                    <motion.div className="text-center text-4xl">
+                    <motion.div className="text-center text-5xl">
                         <div className="flex items-center tracking-wide">
                             {text.split("").map((letter, index) => (
                                 <motion.span
@@ -74,14 +74,14 @@ const ContactPage = () => {
                     ref={form} 
                     className="flex flex-col gap-6 justify-center w-full max-w-md mx-auto lg:w-full">
                         <textarea rows={4} 
-                        className="bg-transparent border-b-2 border-gray-700 outline-none resize-none" 
+                        className="bg-transparent border-b-2 border-gray-500 outline-none resize-none" 
                         name="user_message" 
                         placeholder="Your message" required />
                         <input type="email"
-                        className="bg-transparent border-b-2 border-gray-700 outline-none" 
+                        className="bg-transparent border-b-2 border-gray-500 outline-none" 
                         name="user_email" 
                         placeholder="Your email address:" required />
-                        <button className="p-2 rounded-lg bg-pink-300 hover:bg-pink-400 active:bg-pink-400 focus:outline-none focus:ring focus:ring-pink-300 text-black font-medium tracking-wide" 
+                        <button className="p-2 rounded-lg bg-orange-200 hover:bg-orange-300 focus:outline-none focus:ring text-black font-medium tracking-wide" 
                         type="submit">Send</button>
                         {success && <span className="text-green-600 text-center">Message sent successfully!</span>}
                         {error && <span className="text-red-500 text-center">Message failed to send</span>}

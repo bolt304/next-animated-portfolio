@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: 45,
-      backgroundColor: "rgb(251, 207, 232)",
+      backgroundColor: "rgb(254, 215, 170)",
     }
   }
   const centerVariants = {
@@ -39,7 +39,7 @@ const Navbar = () => {
     },
     opened: {
       rotate: -45,
-      backgroundColor: "rgb(251, 207, 232)",
+      backgroundColor: "rgb(254, 215, 170)",
     }
   };
 
@@ -143,7 +143,7 @@ const Navbar = () => {
           variants={listVariants} 
           initial="closed" 
           animate="opened" 
-          className="fixed top-0 left-0 w-screen h-screen bg-neutral-900 text-pink-200 flex flex-col items-center justify-center gap-8 text-2xl z-40"
+          className="fixed top-0 left-0 w-screen h-screen bg-neutral-900 text-orange-200 flex flex-col items-center justify-center gap-8 text-2xl z-40"
           >
             {links.map(link => (
             <motion.div variants={listItemVariants} className="" key={link.title}>
