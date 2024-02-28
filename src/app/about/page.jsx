@@ -22,7 +22,7 @@ const AboutPage = () => {
           <h1 className="font-bold text-2xl text-center">Biography</h1>
           {/* Descripción */}
           <p className="md:text-l w-full sm:w-auto ml-12 md:mr-15 lg:text-left lg:w-full p-6 font-medium">
-          Hello! I'm Esther, and I've recently shifted from delving into medieval texts to diving into the world of web development. With a strong foundation in history and freshly armed with Full Stack Development skills, I'm now on a quest to integrate my investigative prowess with my newfound passion for coding.
+          Hello! I&apos;m Esther, and I&apos;ve recently shifted from delving into medieval texts to diving into the world of web development. With a strong foundation in history and freshly armed with Full Stack Development skills, I&apos;m now on a quest to integrate my investigative prowess with my newfound passion for coding.
           </p>
           {/* Quote */}
           <span className="italic ml-15">

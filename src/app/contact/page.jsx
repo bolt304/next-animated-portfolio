@@ -32,7 +32,7 @@ const ContactPage = () => {
           setSuccess(true);
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
         },
       );
