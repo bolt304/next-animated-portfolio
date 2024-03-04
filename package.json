@@ -1,15 +1,15 @@
 {
-  "name": "ther-portfolio-starter",
+  "name": "next-animated-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lentinulaedode.github.io/next-animated-portfolio",
+  "homepage": "https://bolt304.github.io/next-animated-portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
