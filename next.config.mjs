@@ -4,4 +4,4 @@ const nextConfig = {
     basePath: "/next-animated-portfolio",
 };
 
-export default nextConfig;
+module.exports = nextConfig
